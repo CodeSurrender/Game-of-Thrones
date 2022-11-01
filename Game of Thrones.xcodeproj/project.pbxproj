@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74AA3839290B678C001C871B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA3838290B678C001C871B /* AppDelegate.swift */; };
+		74AA383B290B678C001C871B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA383A290B678C001C871B /* SceneDelegate.swift */; };
+		74AA383D290B678C001C871B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA383C290B678C001C871B /* ViewController.swift */; };
+		74AA3840290B678C001C871B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AA383E290B678C001C871B /* Main.storyboard */; };
+		74AA3842290B6790001C871B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74AA3841290B6790001C871B /* Assets.xcassets */; };
+		74AA3845290B6790001C871B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AA3843290B6790001C871B /* LaunchScreen.storyboard */; };
+		74AA3850290B6791001C871B /* Game_of_ThronesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA384F290B6791001C871B /* Game_of_ThronesTests.swift */; };
+		74AA385A290B6791001C871B /* Game_of_ThronesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA3859290B6791001C871B /* Game_of_ThronesUITests.swift */; };
+		74AA385C290B6791001C871B /* Game_of_ThronesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA385B290B6791001C871B /* Game_of_ThronesUITestsLaunchTests.swift */; };
+		74AA386A290B69EF001C871B /* CharacterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA3869290B69EF001C871B /* CharacterList.swift */; };
+		74AA386C290B8698001C871B /* HouseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA386B290B8698001C871B /* HouseList.swift */; };
+		74AA3874290BC08C001C871B /* charaterParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA3873290BC08C001C871B /* charaterParser.swift */; };
+		74AA3878290BC125001C871B /* AlertNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA3877290BC125001C871B /* AlertNetworkError.swift */; };
+		74AA387A290D3C1F001C871B /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA3879290D3C1F001C871B /* CharacterCell.swift */; };
+		74AA387C290D3CE3001C871B /* URLImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA387B290D3CE3001C871B /* URLImageDownloader.swift */; };
+		74AA387E290FE3B1001C871B /* HousesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA387D290FE3B1001C871B /* HousesView.swift */; };
+		74AA3880290FE3EB001C871B /* housesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA387F290FE3EB001C871B /* housesParser.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74AA384C290B6791001C871B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74AA382D290B678C001C871B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74AA3834290B678C001C871B;
+			remoteInfo = "Game of Thrones";
+		};
+		74AA3856290B6791001C871B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74AA382D290B678C001C871B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74AA3834290B678C001C871B;
+			remoteInfo = "Game of Thrones";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		74AA3835290B678C001C871B /* Game of Thrones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Game of Thrones.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74AA3838290B678C001C871B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		74AA383A290B678C001C871B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		74AA383C290B678C001C871B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		74AA383F290B678C001C871B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		74AA3841290B6790001C871B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74AA3844290B6790001C871B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		74AA3846290B6790001C871B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74AA384B290B6791001C871B /* Game of ThronesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Game of ThronesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74AA384F290B6791001C871B /* Game_of_ThronesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game_of_ThronesTests.swift; sourceTree = "<group>"; };
+		74AA3855290B6791001C871B /* Game of ThronesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Game of ThronesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74AA3859290B6791001C871B /* Game_of_ThronesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game_of_ThronesUITests.swift; sourceTree = "<group>"; };
+		74AA385B290B6791001C871B /* Game_of_ThronesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game_of_ThronesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		74AA3869290B69EF001C871B /* CharacterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterList.swift; sourceTree = "<group>"; };
+		74AA386B290B8698001C871B /* HouseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseList.swift; sourceTree = "<group>"; };
+		74AA3873290BC08C001C871B /* charaterParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = charaterParser.swift; sourceTree = "<group>"; };
+		74AA3877290BC125001C871B /* AlertNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertNetworkError.swift; sourceTree = "<group>"; };
+		74AA3879290D3C1F001C871B /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
+		74AA387B290D3CE3001C871B /* URLImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageDownloader.swift; sourceTree = "<group>"; };
+		74AA387D290FE3B1001C871B /* HousesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesView.swift; sourceTree = "<group>"; };
+		74AA387F290FE3EB001C871B /* housesParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = housesParser.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74AA3832290B678C001C871B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74AA3848290B6791001C871B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74AA3852290B6791001C871B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74AA382C290B678C001C871B = {
+			isa = PBXGroup;
+			children = (
+				74AA3837290B678C001C871B /* Game of Thrones */,
+				74AA384E290B6791001C871B /* Game of ThronesTests */,
+				74AA3858290B6791001C871B /* Game of ThronesUITests */,
+				74AA3836290B678C001C871B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74AA3836290B678C001C871B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74AA3835290B678C001C871B /* Game of Thrones.app */,
+				74AA384B290B6791001C871B /* Game of ThronesTests.xctest */,
+				74AA3855290B6791001C871B /* Game of ThronesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74AA3837290B678C001C871B /* Game of Thrones */ = {
+			isa = PBXGroup;
+			children = (
+				74AA3838290B678C001C871B /* AppDelegate.swift */,
+				74AA3876290BC0F5001C871B /* Helpers */,
+				74AA3872290BBFB0001C871B /* Views */,
+				74AA3870290BBF98001C871B /* Services */,
+				74AA386E290BBF6C001C871B /* ViewModel */,
+				74AA3868290B69CE001C871B /* Model */,
+				74AA383A290B678C001C871B /* SceneDelegate.swift */,
+				74AA383C290B678C001C871B /* ViewController.swift */,
+				74AA387D290FE3B1001C871B /* HousesView.swift */,
+				74AA383E290B678C001C871B /* Main.storyboard */,
+				74AA3841290B6790001C871B /* Assets.xcassets */,
+				74AA3843290B6790001C871B /* LaunchScreen.storyboard */,
+				74AA3846290B6790001C871B /* Info.plist */,
+			);
+			path = "Game of Thrones";
+			sourceTree = "<group>";
+		};
+		74AA384E290B6791001C871B /* Game of ThronesTests */ = {
+			isa = PBXGroup;
+			children = (
+				74AA384F290B6791001C871B /* Game_of_ThronesTests.swift */,
+			);
+			path = "Game of ThronesTests";
+			sourceTree = "<group>";
+		};
+		74AA3858290B6791001C871B /* Game of ThronesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				74AA3859290B6791001C871B /* Game_of_ThronesUITests.swift */,
+				74AA385B290B6791001C871B /* Game_of_ThronesUITestsLaunchTests.swift */,
+			);
+			path = "Game of ThronesUITests";
+			sourceTree = "<group>";
+		};
+		74AA3868290B69CE001C871B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74AA3869290B69EF001C871B /* CharacterList.swift */,
+				74AA386B290B8698001C871B /* HouseList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		74AA386E290BBF6C001C871B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				74AA3873290BC08C001C871B /* charaterParser.swift */,
+				74AA387F290FE3EB001C871B /* housesParser.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		74AA3870290BBF98001C871B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		74AA3872290BBFB0001C871B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				74AA3879290D3C1F001C871B /* CharacterCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		74AA3876290BC0F5001C871B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				74AA3877290BC125001C871B /* AlertNetworkError.swift */,
+				74AA387B290D3CE3001C871B /* URLImageDownloader.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74AA3834290B678C001C871B /* Game of Thrones */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74AA385F290B6791001C871B /* Build configuration list for PBXNativeTarget "Game of Thrones" */;
+			buildPhases = (
+				74AA3831290B678C001C871B /* Sources */,
+				74AA3832290B678C001C871B /* Frameworks */,
+				74AA3833290B678C001C871B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Game of Thrones";
+			productName = "Game of Thrones";
+			productReference = 74AA3835290B678C001C871B /* Game of Thrones.app */;
+			productType = "com.apple.product-type.application";
+		};
+		74AA384A290B6791001C871B /* Game of ThronesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74AA3862290B6791001C871B /* Build configuration list for PBXNativeTarget "Game of ThronesTests" */;
+			buildPhases = (
+				74AA3847290B6791001C871B /* Sources */,
+				74AA3848290B6791001C871B /* Frameworks */,
+				74AA3849290B6791001C871B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74AA384D290B6791001C871B /* PBXTargetDependency */,
+			);
+			name = "Game of ThronesTests";
+			productName = "Game of ThronesTests";
+			productReference = 74AA384B290B6791001C871B /* Game of ThronesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		74AA3854290B6791001C871B /* Game of ThronesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74AA3865290B6791001C871B /* Build configuration list for PBXNativeTarget "Game of ThronesUITests" */;
+			buildPhases = (
+				74AA3851290B6791001C871B /* Sources */,
+				74AA3852290B6791001C871B /* Frameworks */,
+				74AA3853290B6791001C871B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74AA3857290B6791001C871B /* PBXTargetDependency */,
+			);
+			name = "Game of ThronesUITests";
+			productName = "Game of ThronesUITests";
+			productReference = 74AA3855290B6791001C871B /* Game of ThronesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74AA382D290B678C001C871B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					74AA3834290B678C001C871B = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					74AA384A290B6791001C871B = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 74AA3834290B678C001C871B;
+					};
+					74AA3854290B6791001C871B = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 74AA3834290B678C001C871B;
+					};
+				};
+			};
+			buildConfigurationList = 74AA3830290B678C001C871B /* Build configuration list for PBXProject "Game of Thrones" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74AA382C290B678C001C871B;
+			productRefGroup = 74AA3836290B678C001C871B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74AA3834290B678C001C871B /* Game of Thrones */,
+				74AA384A290B6791001C871B /* Game of ThronesTests */,
+				74AA3854290B6791001C871B /* Game of ThronesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74AA3833290B678C001C871B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74AA3845290B6790001C871B /* LaunchScreen.storyboard in Resources */,
+				74AA3842290B6790001C871B /* Assets.xcassets in Resources */,
+				74AA3840290B678C001C871B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74AA3849290B6791001C871B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74AA3853290B6791001C871B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74AA3831290B678C001C871B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74AA3874290BC08C001C871B /* charaterParser.swift in Sources */,
+				74AA383D290B678C001C871B /* ViewController.swift in Sources */,
+				74AA3839290B678C001C871B /* AppDelegate.swift in Sources */,
+				74AA387A290D3C1F001C871B /* CharacterCell.swift in Sources */,
+				74AA383B290B678C001C871B /* SceneDelegate.swift in Sources */,
+				74AA3880290FE3EB001C871B /* housesParser.swift in Sources */,
+				74AA386C290B8698001C871B /* HouseList.swift in Sources */,
+				74AA3878290BC125001C871B /* AlertNetworkError.swift in Sources */,
+				74AA387C290D3CE3001C871B /* URLImageDownloader.swift in Sources */,
+				74AA386A290B69EF001C871B /* CharacterList.swift in Sources */,
+				74AA387E290FE3B1001C871B /* HousesView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74AA3847290B6791001C871B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74AA3850290B6791001C871B /* Game_of_ThronesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74AA3851290B6791001C871B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74AA385A290B6791001C871B /* Game_of_ThronesUITests.swift in Sources */,
+				74AA385C290B6791001C871B /* Game_of_ThronesUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74AA384D290B6791001C871B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74AA3834290B678C001C871B /* Game of Thrones */;
+			targetProxy = 74AA384C290B6791001C871B /* PBXContainerItemProxy */;
+		};
+		74AA3857290B6791001C871B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74AA3834290B678C001C871B /* Game of Thrones */;
+			targetProxy = 74AA3856290B6791001C871B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		74AA383E290B678C001C871B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74AA383F290B678C001C871B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		74AA3843290B6790001C871B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74AA3844290B6790001C871B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		74AA385D290B6791001C871B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		74AA385E290B6791001C871B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74AA3860290B6791001C871B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6WNRAAJ27A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Game of Thrones/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Game of Thrones";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "CollinsK.Game-of-Thrones";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		74AA3861290B6791001C871B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6WNRAAJ27A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Game of Thrones/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Game of Thrones";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "CollinsK.Game-of-Thrones";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		74AA3863290B6791001C871B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6WNRAAJ27A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "CollinsK.Game-of-ThronesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Game of Thrones.app/Game of Thrones";
+			};
+			name = Debug;
+		};
+		74AA3864290B6791001C871B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6WNRAAJ27A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "CollinsK.Game-of-ThronesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Game of Thrones.app/Game of Thrones";
+			};
+			name = Release;
+		};
+		74AA3866290B6791001C871B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6WNRAAJ27A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "CollinsK.Game-of-ThronesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Game of Thrones";
+			};
+			name = Debug;
+		};
+		74AA3867290B6791001C871B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6WNRAAJ27A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "CollinsK.Game-of-ThronesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Game of Thrones";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74AA3830290B678C001C871B /* Build configuration list for PBXProject "Game of Thrones" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74AA385D290B6791001C871B /* Debug */,
+				74AA385E290B6791001C871B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74AA385F290B6791001C871B /* Build configuration list for PBXNativeTarget "Game of Thrones" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74AA3860290B6791001C871B /* Debug */,
+				74AA3861290B6791001C871B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74AA3862290B6791001C871B /* Build configuration list for PBXNativeTarget "Game of ThronesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74AA3863290B6791001C871B /* Debug */,
+				74AA3864290B6791001C871B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74AA3865290B6791001C871B /* Build configuration list for PBXNativeTarget "Game of ThronesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74AA3866290B6791001C871B /* Debug */,
+				74AA3867290B6791001C871B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74AA382D290B678C001C871B /* Project object */;
+}
