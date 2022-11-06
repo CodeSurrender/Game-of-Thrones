@@ -68,15 +68,23 @@ class HousesView: UIViewController, UITableViewDelegate, UITableViewDataSource  
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             
             let cell = nasaMedia(frame: CGRect(x: 0,y: 0,width: self.view.frame.width,height: 100), title: "nasaMedia")
-            
+
             DispatchQueue.main.async {
-                cell.nameLabel.text = (String(describing: self.houses!.name) == "") ? "Unknown Character" : String(describing: self.houses!.name)
-                cell.genderLabel.text = (String(describing: self.houses!.region) == "") ? "Gender Unknown" : String(describing: self.houses!.region)
-                cell.cultureLabel.text = (String(describing: self.houses!.coatOfArms) == "") ? "Culture Unknown" : String(describing: self.houses!.coatOfArms)
-                cell.bornLabel.text = (String(describing: self.houses!.words) == "") ? "Unknown date of birth" : String(describing: self.houses!.words)
+                //Optional binding
+                if let name = self.houses?.name {
+                    cell.nameLabel.text = name
+                }
+                if let gender = self.houses?.region {
+                    cell.genderLabel.text = gender
+                }
+                if let culture = self.houses?.coatOfArms {
+                    cell.cultureLabel.text = culture
+                }
+                if let words = self.houses?.words {
+                    cell.bornLabel.text = words
+                }
             }
             return cell
-            
         }
 }
 
