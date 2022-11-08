@@ -9,15 +9,15 @@ Visuals
 
 ![Screenshot 2022-11-08 at 10 01 04 PM](https://user-images.githubusercontent.com/28135810/200652321-233893eb-4494-4c70-bfd7-615bb9dd1561.png)
 
-A screenshot of the Game of Thrones iOS app running on an iPhone X emulator The screenshots above are as listed – from left to right: a. Loading screen during startup. b. Error screen on network failure. c. NASA mission list with title, photographer name, date and image. d. Missions details screen.
+A screenshot of the Game of Thrones iOS app running on an iPod, iPhone 11 and iPad.
 
 Installation
 
-To run this app, you will require XCode. Download the project files and open the Nasa.xcodeproj
+To run this app, you will require Xcode. Download the project files and open the Game of Thrones.xcodeproj
 
 Usage
 
-The app simply downloads data from a NASA API and displays missions. When a user taps on a mission, they are directed to a details pane where they are provided with more information regarding the mission.
+The app simply downloads data from a Game of Throne API and displays the TV Show's data. When a user taps on a character, they are directed to a details pane where they are provided with more information regarding their house.
 
 Support
 
@@ -25,12 +25,8 @@ You can reach the developer – Collins Kariuki - of the iOS app here : collinsk
 
 Authors and acknowledgment
 
-This app has been developed thanks to NASA - National Aeronautics and Space Administration – from sharing their API, Apple for providing Xcode and Collins Kariuki for writing Swift code that the app is based on.
+This app has been developed thanks to Apple for providing Xcode and Swift code that the app is based on.
 
 License
 
-Content displayed is retrieved from NASA and is only used for evaluation purposes.
-
-Project status
-
-This project is complete and unlikely to be updated in future.
+Content displayed is only used for evaluation purposes.
