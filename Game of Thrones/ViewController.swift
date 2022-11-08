@@ -20,13 +20,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let displayWidth: CGFloat = self.view.frame.width
             let displayHeight: CGFloat = self.view.frame.height
 
-            let logo = UIImageView(frame: CGRect(x: 0, y: 0, width: 70, height: 70))
+            let logo = UIImageView(frame: CGRect(x: 0, y: 0, width: 90, height: 90))
             logo.image = UIImage(named: "wolf")
             logo.contentMode = .scaleAspectFit
             logo.addBorderBottom(size: 1.0, color: .gray)
             self.view.addSubview(logo)
             
-            let viewTitle = UILabel(frame: CGRect(x: 70, y: 0, width: self.view.frame.width - 70, height: 70))
+            let viewTitle = UILabel(frame: CGRect(x: 90, y: 0, width: self.view.frame.width - 90, height: 90))
             viewTitle.text = "Game of Thrones Characters"
             viewTitle.font = UIFont.systemFont(ofSize: 15, weight: .black)
             viewTitle.backgroundColor = .black
@@ -34,7 +34,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             viewTitle.textAlignment = .center
             self.view.addSubview(viewTitle)
 
-            myTableView = UITableView(frame: CGRect(x: 0, y: 70, width: displayWidth, height: displayHeight - 70))
+            myTableView = UITableView(frame: CGRect(x: 0, y: 90, width: displayWidth, height: displayHeight - 90))
             myTableView.register(UITableViewCell.self, forCellReuseIdentifier: "MyCell")
             myTableView.dataSource = self
             myTableView.delegate = self

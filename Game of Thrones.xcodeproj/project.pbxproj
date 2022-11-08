@@ -512,7 +512,7 @@
 				DEVELOPMENT_TEAM = 6WNRAAJ27A;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Game of Thrones/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Game of Thrones";
+				INFOPLIST_KEY_CFBundleDisplayName = GOT;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -541,7 +541,7 @@
 				DEVELOPMENT_TEAM = 6WNRAAJ27A;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Game of Thrones/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Game of Thrones";
+				INFOPLIST_KEY_CFBundleDisplayName = GOT;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
