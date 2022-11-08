@@ -20,9 +20,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let displayWidth: CGFloat = self.view.frame.width
             let displayHeight: CGFloat = self.view.frame.height
 
-            let viewTitle = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 70))
+            let logo = UIImageView(frame: CGRect(x: 0, y: 0, width: 70, height: 70))
+            logo.image = UIImage(named: "wolf")
+            logo.contentMode = .scaleAspectFit
+            logo.addBorderBottom(size: 1.0, color: .gray)
+            self.view.addSubview(logo)
+            
+            let viewTitle = UILabel(frame: CGRect(x: 70, y: 0, width: self.view.frame.width - 70, height: 70))
             viewTitle.text = "Game of Thrones Characters"
-            viewTitle.font = UIFont.boldSystemFont(ofSize: 20)
+            viewTitle.font = UIFont.systemFont(ofSize: 15, weight: .black)
             viewTitle.backgroundColor = .black
             viewTitle.textColor = .white
             viewTitle.textAlignment = .center
@@ -33,7 +39,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             myTableView.dataSource = self
             myTableView.delegate = self
             myTableView.rowHeight = 190.0
+            myTableView.separatorColor = .gray
+            myTableView.separatorStyle = .singleLine
+            myTableView.backgroundColor = .white
+            myTableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
             self.view.addSubview(myTableView)
+            
 
             parserc.parse{datax in
                 self.characters = datax
@@ -42,6 +53,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 }
             }
         }
+    
+    
     
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             let destination = HousesView()
@@ -62,6 +75,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             
             let cell = nasaMedia(frame: CGRect(x: 0,y: 0,width: self.view.frame.width,height: 100), title: "nasaMedia")
+            cell.backgroundColor = .clear
+            cell.textLabel?.textColor = .white
             cell.nameLabel.text = (String(describing: characters[indexPath.row].name) == "") ? "Unknown Character" : String(describing: characters[indexPath.row].name)
             cell.genderLabel.text = (String(describing: characters[indexPath.row].gender) == "") ? "Gender Unknown" : String(describing: characters[indexPath.row].gender)
             cell.cultureLabel.text = (String(describing: characters[indexPath.row].culture) == "") ? "Culture Unknown" : String(describing: characters[indexPath.row].culture)
@@ -73,5 +88,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return cell
             
         }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 }
 
