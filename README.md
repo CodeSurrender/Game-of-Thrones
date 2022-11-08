@@ -3,7 +3,7 @@ GAME OF THRONES DETAILS APP
 Description
 
 This app has been developed with the purpose of retrieving Game of Thrones data for entertainment references. The design pattern used on the app is MVVM – model view viewmodel – and written in Swift 5. The app does not use any 3rd party libraries. 
-Unit testing is included in tis application.
+Unit testing is included in this application.
 
 Visuals
 
