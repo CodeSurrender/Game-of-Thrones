@@ -32,5 +32,46 @@ class Game_of_ThronesTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    
+    func testCharacterJSONData(){
+        
+        let name = "CharacterMockData"
+        let data = readLocalFile(forName: name)
+        //File test
+        XCTAssertNotNil(data)
+
+        //Decoding Test
+        XCTAssertNoThrow(try JSONDecoder().decode([Character].self, from: data!))
+ 
+    }
+    
+    func readLocalFile(forName name: String) -> Data? {
+        do {
+            if let bundlePath = Bundle.main.path(forResource: name,
+                                                 ofType: "json"),
+                let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
+                print("Success")
+                return jsonData
+            }
+        } catch {
+            print(error)
+        }
+        
+        return nil
+    }
+    
+    func testHouseJSONData(){
+        
+        let name = "HouseMockJSONData"
+        let data = readLocalFile(forName: name)
+        //File test
+        XCTAssertNotNil(data)
+
+        //Decoding Test
+        XCTAssertNoThrow(try JSONDecoder().decode(House.self, from: data!))
+ 
+    }
+    
 
 }

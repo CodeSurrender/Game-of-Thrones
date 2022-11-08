@@ -13,11 +13,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var characters = [Character]()
     let parserc = CharacterParser()
 
-         var myTableView = UITableView()
+        var myTableView = UITableView()
 
         override func viewDidLoad() {
             super.viewDidLoad()
-            
             let displayWidth: CGFloat = self.view.frame.width
             let displayHeight: CGFloat = self.view.frame.height
 

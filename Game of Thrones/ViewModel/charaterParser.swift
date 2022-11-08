@@ -34,8 +34,8 @@ struct CharacterParser{
             }
     //JSON Decoding
             do {
-                 let result = try JSONDecoder().decode([Character].self , from: data!)
-                comp(((result)))
+                let result = try JSONDecoder().decode([Character].self , from: data!)
+                comp(result)
                 print(result)
         
                  
