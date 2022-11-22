@@ -12,8 +12,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     var characters = [Character]()
     let parserc = CharacterParser()
-
-        var myTableView = UITableView()
+    var myTableView = UITableView()
 
         override func viewDidLoad() {
             super.viewDidLoad()
